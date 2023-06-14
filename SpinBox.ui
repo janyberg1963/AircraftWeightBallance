@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InputForm</class>
+ <widget class="QWidget" name="InputForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>261</width>
+    <height>416</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Pilot</string>
+  </property>
+  <widget class="QDial" name="Cmd_Dial">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>80</y>
+     <width>121</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Cmd_Accept">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>330</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>270</y>
+     <width>101</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>500</number>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>181</width>
+     <height>371</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Pilot Weight</string>
+   </property>
+  </widget>
+  <zorder>groupBox</zorder>
+  <zorder>Cmd_Dial</zorder>
+  <zorder>Cmd_Accept</zorder>
+  <zorder>spinBox</zorder>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Cmd_Accept</sender>
+   <signal>pressed()</signal>
+   <receiver>Cmd_Accept</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>74</x>
+     <y>311</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>74</x>
+     <y>311</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
